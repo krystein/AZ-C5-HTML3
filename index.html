@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Start your development with azubic landing page." />
+  <meta name="author" content="integratio" />
+  <title>Assignment</title>
+  <!-- Favicon icon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png" />
+  <style>
+    table,
+    td {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <!--section-->
+  <section>
+    <!--Headings-->
+    <h1>WELCOME!!!</h1>
+    <h2><i>front-end development assignment</i></h2>
+    <form>
+      <!-- Full Name -->
+      <div>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required />
+      </div>
+
+
+      <!-- Email -->
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <!-- Phone Number -->
+      <div>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"
+          required />
+        <small>Format: 123-456-7890</small>
+      </div>
+      <!-- Age -->
+      <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required />
+      </div>
+      <!-- Date of Birth -->
+      <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+      </div>
+      <!-- Select Dropdown -->
+      <div>
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="usa">United States</option>
+          <option value="canada">Canada</option>
+          <option value="uk">United Kingdom</option>
+          <!-- Add more options as needed -->
+        </select>
+      </div>
+      <!-- Radio Buttons -->
+      <div>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required />
+        <label for="female">Female</label>
+      </div>
+      <!-- Checkboxes -->
+      <div>
+        <label>Interests:</label>
+        <input type="checkbox" id="programming" name="interests[]" value="programming" required/>
+        <label for="programming">Programming</label>
+        <input type="checkbox" id="design" name="interests[]" value="design" required/>
+        <label for="design">Design</label>
+        <input type="checkbox" id="design" name="interests[]" value="dancing" required/>
+        <label for="design">Dancing</label>
+        <input type="checkbox" id="design" name="interests[]" value="Travel" required/>
+        <label for="design">Travel</label>
+      </div>
+      <!-- Textarea -->
+      <div>
+        <label for="message">Additional Comments:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <!-- Submit Button -->
+      <div>
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </section>
+</body>
+
+</html>
